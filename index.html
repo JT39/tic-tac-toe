@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tic-Tac-Toe Game</title>
+    <meta charset="UTF-8">
+    <link href="reset.css" rel="stylesheet" type="text/css">
+    <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    <div class="options">
+        <input id="start" type='button' value="Start">
+        <input id="reset" type="button" value="Reset">
+    </div>
+    <div class="container">
+        <div class="playerOne">
+            <h2>Player One</h2>
+            <input type="text">
+        </div>
+        <div id="gameboard">
+            <div style="border-left: none; border-top: none;" class="0"></div>
+            <div style="border-left: none; border-top: none;" class="1"></div>
+            <div style="border-right: none; border-top: none;" class="2"></div>
+            <div style="border-left: none; border-top: none;" class="3"></div>
+            <div style="border-left: none; border-top: none;" class="4"></div>
+            <div style="border-right: none; border-top: none;" class="5"></div>
+            <div style="border-left: none; border-bottom: none;" class="6"></div>
+            <div style="border-left: none; border-bottom: none;" class="7"></div>
+            <div style="border-right: none; border-bottom: none;" class="8"></div>
+        </div>
+        <div class="otherPlayer">
+            <h2>Player Two</h2>
+            <input type='button' value='Computer'>
+        </div>
+    </div>
+    <div class="displayWinner">
+        <p></p>
+    </div>
+    <script src=" script.js">
+    </script>
+</body>
+
+</html>

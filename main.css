@@ -1,0 +1,75 @@
+html {
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 65px;
+    text-align: center;
+    margin-top: 25px;
+}
+.displayWinner {
+    width: 600px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+   
+}
+.displayWinner > p {
+    font-size: 50px;
+}
+
+input[type="text"] {
+    width: 175px;
+    font-size: 20px;
+    text-align: center;
+}
+
+input[value="Start"], input[value="Reset"] {
+  display: inline-block;
+   width: 200px;
+   height: 100px;
+   text-align: center;
+   font-size: 40px;
+   margin: 25px auto;
+}
+
+#reset {
+    display: none;
+} 
+
+.options {
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+    height: 600px;
+    display: flex;
+}
+.playerOne, .otherPlayer {
+    text-align: center;
+    width: 200px;
+}
+#gameboard {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+}
+
+#gameboard > div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+    font-size: 140px;
+    color: rgb(92, 91, 91)
+}
+
