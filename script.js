@@ -90,13 +90,13 @@ const gameboardModule = (function () {
                     return true;
                 } else {
                     displayWinner.innerHTML = 'Tie';
-                    return true;
                 }
             }
-        }
+        } 
 
         return false;
     }
+
 
     function render(event) {
 
@@ -146,10 +146,8 @@ const displayController = (function () {
         spots.forEach(spot => spot.addEventListener('click', gameboardModule.render));
         if (name.value !== '') {
             playerNames[0].innerHTML = name.value;
-
-            gameboardModule.playerOne.player = name.value;
         }
-        gameboardModule.playerTwo.playeer = playerNames[1].innerHTML;
+        gameboardModule.playerOne.player = playerNames[0].innerHTML;
         name.style.display = 'none';
         name.value = '';
 
@@ -167,6 +165,7 @@ const displayController = (function () {
         playerNames[1].innerHTML = 'Player Two';
 
         gameboardModule.playerOne.player = 'Player One';
+        gameboardModule.playerTwo.player = 'Player Two';
         name.style.display = 'initial';
         buttons[0].style.display = 'initial';
         buttons[1].style.display = 'none';
