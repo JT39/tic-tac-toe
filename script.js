@@ -166,6 +166,7 @@ const displayController = (function () {
         playerNames[0].innerHTML = 'Player One';
         playerNames[1].innerHTML = 'Player Two';
 
+        gameboardModule.playerOne.player = 'Player One';
         name.style.display = 'initial';
         buttons[0].style.display = 'initial';
         buttons[1].style.display = 'none';
